@@ -76,6 +76,7 @@ button {
 
 .wall {
   height: 100%;
+  background-color: #e9e9e9;
   background-image: url("../img/wall.webp");
   background-repeat: no-repeat;
   background-size: cover;
