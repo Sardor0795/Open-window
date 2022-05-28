@@ -74,6 +74,53 @@ button {
   flex-grow: 1;
 }
 
+.wall {
+  height: 100%;
+  background-image: url("../img/wall.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.window {
+  border: 12px ridge #d9d9d9;
+  display: flex;
+  margin-right: 250px;
+  margin-bottom: 250px;
+  background-image: url("../img/outside.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.parts {
+  width: 150px;
+  height: 300px;
+  border: 12px ridge #d9d9d9;
+  background-color: rgba(0, 0, 0, 0.563);
+  transition: transform 0.7s ease;
+}
+
+.left-part {
+  transform-origin: left center;
+}
+
+.right-part {
+  transform-origin: right center;
+}
+
+.window:hover .left-part {
+  transform: perspective(2000px) rotateY(80deg);
+}
+
+.window:hover .right-part {
+  transform: perspective(2000px) rotateY(-80deg);
+}
+
 /* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -82,4 +129,10 @@ button {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+  .wall {
+    background-image: url("../img/wall@2x.jpg");
+  }
+  .window {
+    background-image: url("../img/outside@2x.jpg");
+  }
 }
