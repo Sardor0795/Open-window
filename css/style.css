@@ -91,6 +91,7 @@ button {
   display: flex;
   margin-right: 250px;
   margin-bottom: 250px;
+  background-color: #3a6b5b;
   background-image: url("../img/outside.jpg");
   background-size: cover;
   background-repeat: no-repeat;
