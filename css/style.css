@@ -97,6 +97,7 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
+  position: relative;
 }
 
 .parts {
@@ -105,6 +106,7 @@ button {
   border: 12px ridge #d9d9d9;
   background-color: rgba(0, 0, 0, 0.563);
   transition: transform 0.7s ease;
+  z-index: 50;
 }
 
 .left-part {
@@ -121,6 +123,20 @@ button {
 
 .window:hover .right-part {
   transform: perspective(2000px) rotateY(-80deg);
+}
+
+.bean {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transform: translate(500px, 500px);
+  transition-delay: 2s;
+}
+
+.window:hover .bean {
+  transform: translate(0, 0);
 }
 
 /* RETINA BG */
