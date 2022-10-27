@@ -190,3 +190,11 @@ button {
     background-image: url("../img/outside@2x.jpg");
   }
 }
+
+@media (max-width: 900px) {
+  .window {
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
