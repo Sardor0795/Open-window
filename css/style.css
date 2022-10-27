@@ -136,7 +136,43 @@ button {
 }
 
 .window:hover .bean {
-  transform: translate(0, 0);
+  animation: bean 0.001s forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+}
+
+.mr2 {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 100px;
+
+  animation: mr2 1s forwards;
+}
+
+.window:hover .mr2 {
+  animation: unset;
+  transform: translateX(200px);
+}
+
+@keyframes bean {
+  0% {
+    bottom: 0;
+    left: 0;
+    transform: translate(-50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes mr2 {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* RETINA BG */
