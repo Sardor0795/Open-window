@@ -132,7 +132,7 @@ button {
   left: 0;
   z-index: 1;
   transform: translate(500px, 500px);
-  transition-delay: 2s;
+  transition-delay: 1s;
 }
 
 .window:hover .bean {
